@@ -10,7 +10,7 @@ var crystal = {
     {
         name: "Green",
         value: 0
-    },
+    }
     pink:
     {
         name: "Pink",
@@ -32,13 +32,17 @@ var lossCount       = 0;
 
 
 $("#blue").click(function() {
+    alert("test");
 });
 
 $("#green").click(function() {
+    alert("test");
 });
 
 $("#pink").click(function() {
+    alert("test");
 });
 
 $("#yellow").click(function() {
+    alert("test");
 });

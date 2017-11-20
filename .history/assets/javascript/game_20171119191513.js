@@ -10,7 +10,7 @@ var crystal = {
     {
         name: "Green",
         value: 0
-    },
+    }
     pink:
     {
         name: "Pink",
@@ -28,17 +28,3 @@ var targetScore     = 0;
 
 var winCount        = 0;
 var lossCount       = 0;
-
-
-
-$("#blue").click(function() {
-});
-
-$("#green").click(function() {
-});
-
-$("#pink").click(function() {
-});
-
-$("#yellow").click(function() {
-});
