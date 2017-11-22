@@ -67,7 +67,7 @@ var checkWin = function() {
         startGame();
     }
     else if (currentScore == targetScore) {
-        alert("Congrats, You've Won!");
+        alert("Congrats, 'You've Won!");
         
         winCount ++;
 

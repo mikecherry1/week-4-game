@@ -34,9 +34,9 @@ var getRandom = function(min,max) {
 
 var startGame = function() {
 
-    currentScore = 0;
+    var currentScore = 0;
 
-    targetScore = getRandom(19,120);
+    targetScore =           getRandom(19,120);
 
     crystal.pink.value =    getRandom(1, 12);
     crystal.blue.value =    getRandom(1, 12);
@@ -56,42 +56,17 @@ var addValues = function(crystal) {
     checkWin();
 }
 
-var checkWin = function() {
-    if(currentScore > targetScore) {
-        alert("Your score's too high, You've lost!");
 
-        lossCount++;
-
-        $("#lossCount").html(lossCount);
-
-        startGame();
-    }
-    else if (currentScore == targetScore) {
-        alert("Congrats, You've Won!");
-        
-        winCount ++;
-
-        $("#winCount").html(winCount);
-
-        startGame();
-    }
-}
-
-
-startGame();
 
 $("#pink").click(function() {
-    addValues(crystal.pink);
+    alert("pink!");
 });
 
 $("#blue").click(function() {
-    addValues(crystal.blue);
 });
 
 $("#green").click(function() {
-    addValues(crystal.green);
 });
 
 $("#yellow").click(function() {
-    addValues(crystal.yellow);
 });

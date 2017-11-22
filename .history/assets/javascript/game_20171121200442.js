@@ -34,9 +34,9 @@ var getRandom = function(min,max) {
 
 var startGame = function() {
 
-    currentScore = 0;
+    var currentScore = 0;
 
-    targetScore = getRandom(19,120);
+    targetScore =           getRandom(19,120);
 
     crystal.pink.value =    getRandom(1, 12);
     crystal.blue.value =    getRandom(1, 12);
@@ -63,17 +63,13 @@ var checkWin = function() {
         lossCount++;
 
         $("#lossCount").html(lossCount);
-
-        startGame();
     }
     else if (currentScore == targetScore) {
-        alert("Congrats, You've Won!");
+        alert("Congrats, 'You've Won!");
         
         winCount ++;
 
         $("#winCount").html(winCount);
-
-        startGame();
     }
 }
 
